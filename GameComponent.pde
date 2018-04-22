@@ -1,3 +1,6 @@
+/**This is a class that manages the different components of the game.
+*/
+
 public interface GameComponent {
 
   /**if game component is eaten, score is increased by returned amount
