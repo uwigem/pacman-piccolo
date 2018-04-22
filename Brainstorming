@@ -1,0 +1,22 @@
+Pacman
+Ghost
+Dots
+Fruit
+Walls/Barriers
+Score
+Lives
+Power ups
+Game Logic
+
+Possible Interfaces
+  Mobs
+    Pacman
+    Ghosts
+ GameComp
+    Dots
+    Fruit
+    Walls
+    Powerups
+ Board
+ GameLogic
+    methods
