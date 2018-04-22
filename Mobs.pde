@@ -1,3 +1,6 @@
+/**This is a class that controls the mobs of Pacman.
+*/
+
 public interface Mobs {
   /**returns true if mob is vulnerable
      and returns false if invincible and ready to eat
@@ -21,4 +24,8 @@ public interface Mobs {
      @param direction appearance is based on given direction
   */
   public void setAppearance(int direction);
+  
+  /**updates individual mob to appropriate state when pacman eats powerup
+  */
+  public void powerupEaten();
 }
