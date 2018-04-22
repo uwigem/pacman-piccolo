@@ -8,7 +8,7 @@ public interface Mobs {
   /**sets vulnerability
      if parameter is true, mob is vulnerable,
      else, mob is invincible
-     @param sets vulnerability of mob
+     @param vulnerable sets vulnerability of mob
   */
   public void setVulnerable(boolean vulnerable);
   
@@ -18,7 +18,7 @@ public interface Mobs {
   public Image getAppearance();
   
   /**sets the current image of this mob based on given direction
-     @param appearance is based on given direction
+     @param direction appearance is based on given direction
   */
   public void setAppearance(int direction);
 }
