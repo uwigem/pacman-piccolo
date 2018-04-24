@@ -3,7 +3,7 @@
 
 public interface Board {
   
-  /**returns current score
+  /**returns the current score of this game of pacman
      @return current score
   */
   public int score();
@@ -15,7 +15,12 @@ public interface Board {
   
   /**updates board with new position of mobs based on given direction
      and gameComponents to what they should be
-     @param direction sets position to what it should be
+     @pre game is not over and
+     @param direction sets pacman's position for that turn
+     @post score is updated, if pacman died appropriate end game
+           has started. If no issues, then every mob would have
+           moved one space and any edible game components would be
+           eaten.
   */
   public void updatePosition(int direction);
   
