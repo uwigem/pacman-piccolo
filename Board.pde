@@ -35,8 +35,13 @@ public interface Board {
      @return whether or not round is over
   */
   public boolean roundOver();
-}
 
+  /**Moves all the mobs to their beginning positions and refills gameComponents into
+     the board. 
+     @pre roundOver && !gameOver
+  */
+  public void resetRound();
+}
 --------------------------------------------------------------------------------------------------
 *Example code for this interface
 
