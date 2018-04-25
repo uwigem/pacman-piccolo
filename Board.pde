@@ -40,7 +40,11 @@ public interface Board {
 --------------------------------------------------------------------------------------------------
 *Example code for this interface
 
-public class gameLogic() {
+public class GameLogic() {
+  public GameLogic() {
+    for each Mob, construct them then call Mob.getAppearance() in order to draw the graphics
+  }
+  
   public int score() {
     everytime pacman eats a dot or powerup or fruit or ghost, increment score by appropriate value;
   }
