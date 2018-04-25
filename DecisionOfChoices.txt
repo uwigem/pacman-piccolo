@@ -1,1 +1,32 @@
+*******************************MEGAN**************************************
 
+General Overview of Design:
+1-3 sentences about game logic and components   
+
+Mobs.pde
+1-3 sentences
+How is used
+Why we made this choice
+
+GameComponent.pde
+1-3 sentences
+How is used
+Why we made this choice
+
+Board.pdc
+1-3 sentences
+How is used
+Why we made this choice
+*******************************MEGAN**************************************
+
+*******************************AARON**************************************
+How they fit together in main (1-5): Aaron 
+  main() {
+    Board gameBoard = new Board(200, 500);
+    // initialize variables
+    while(!gameBoard.isOver()) {
+      board.dosomething()
+    }
+    // exit the game
+ }
+*******************************AARON**************************************
