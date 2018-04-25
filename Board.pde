@@ -36,3 +36,35 @@ public interface Board {
   */
   public boolean roundOver();
 }
+
+--------------------------------------------------------------------------------------------------
+*Example code for this interface
+
+public class gameLogic() {
+  public int score() {
+    everytime pacman eats a dot or powerup or fruit or ghost, increment score by appropriate value;
+  }
+  
+  public int numberLives() {
+    if pacman runs into ghost, decrease number of lives;
+    return number of remaining lives;
+  }
+  
+  public void updatePosition(int direction) {
+    if (direction is right) {
+      move Pacman right;
+    } else if {
+      ...
+    } else {
+      ...
+    }
+  }
+  
+  public boolean gameOver() {
+    determines whether the game is over by examining the number of lives;
+  }
+  
+  public boolean roundOver() {
+    returns if pacman was eaten by ghost || gameOver
+  }
+}
