@@ -29,3 +29,40 @@ public interface Mobs {
   */
   public void powerupEaten();
 }
+
+--------------------------------------------------------------------------------
+*Example code using this interface
+
+public class Pacman {
+  public boolean isVulnerable() {
+    return if the pacman is in powerUp mode or not;
+  }
+  
+  public void setVulnerable(boolean vulnerable) {
+    if vulnerable is true, then give Pacman a series of conditions/behaviors that would make it "vulnerable";
+    else, assign Pacman invincible behavior;
+  }
+  
+  public Image getAppearance() {
+    return an image of pacman;
+  }
+  
+  public Image setAppearance(int direction) {
+    //example
+    if (direction is right) {
+      return an image of Pacman facing its mouth towards the right;
+    } else if (direction is up) {
+      return an image of Pacman facing up
+    } else if {
+      ...
+    } else {
+      ...
+    }
+  }
+  
+  public void powerUpEaten() {
+    make Pacman match the condition of when powerUp is eaten
+    //able to eat ghosts,
+    etc.
+  }
+}
