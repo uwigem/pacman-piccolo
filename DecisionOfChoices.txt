@@ -20,12 +20,24 @@ Why we made this choice
 *******************************MEGAN**************************************
 
 *******************************AARON**************************************
-How they fit together in main (1-5): Aaron 
+
+
+How they fit together in main (1-5): Aaron
+The board interface made will interact with the GameComponent and Mobs interfaces, but main will only interact with the board.
+
+Code Example:
   main() {
-    Board gameBoard = new Board(200, 500);
+    Graphics g = new Graphics();
+    Board gameBoard = new GameLogic(200, 500, g);
     // initialize variables
-    while(!gameBoard.isOver()) {
-      board.dosomething()
+    while(!gameBoard.gameOver()) {
+      g.draw(gameboard.lives());
+      gameBoard.resetRound()
+      while(!gameBoard.roundOver()) {
+        keyboard.readinput();
+        gameboard.updatePosition(direction)
+        g.draw(gameboard.score());
+      }
     }
     // exit the game
  }
