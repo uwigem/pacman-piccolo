@@ -35,7 +35,7 @@ public interface GameComponent {
 }
 
 ---------------------------------------------------------------------------------
-*Example code for this interface
+/*Example code for this interface
 
 public class Fruit {
 
@@ -71,3 +71,4 @@ public class Fruit {
     returns true (since fruits can be eaten by ghosts)
   }
 }
+*/
