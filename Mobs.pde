@@ -31,7 +31,7 @@ public interface Mobs {
 }
 
 --------------------------------------------------------------------------------
-*Example code using this interface
+/*Example code using this interface
 
 public class Pacman {
 
@@ -70,4 +70,4 @@ public class Pacman {
     //able to eat ghosts,
     etc.
   }
-}
+} */
