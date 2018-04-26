@@ -19,13 +19,9 @@ How is used
 Why we made this choice
 *******************************MEGAN**************************************
 
-*******************************AARON**************************************
+The board interface made will interact with the GameComponent and Mobs interfaces, but main will only interact with the board. The GameComponent Interface will provide methods for the walls, dots, powerups, and food to implement. Mobs will handle all four ghosts and Pacman, which like GameComponent will have methods that Board calls. The board will handle the position and logic around each turn as well as handling part of the graphics. Main will provide input from the keyboard and use the methods of Board to actually run the game.
 
-
-How they fit together in main (1-5): Aaron
-The board interface made will interact with the GameComponent and Mobs interfaces, but main will only interact with the board.
-
-Code Example:
+Code Example of Main
   main() {
     Graphics g = new Graphics();
     Board gameBoard = new GameLogic(200, 500, g);
@@ -41,4 +37,4 @@ Code Example:
     }
     // exit the game
  }
-*******************************AARON**************************************
+
