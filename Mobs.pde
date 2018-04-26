@@ -34,6 +34,11 @@ public interface Mobs {
 *Example code using this interface
 
 public class Pacman {
+
+  public Pacman() {
+    Mob.getAppearance() to draw graphics
+  }
+  
   public boolean isVulnerable() {
     return if the pacman is in powerUp mode or not;
   }
