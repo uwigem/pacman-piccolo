@@ -1,14 +1,26 @@
 General Overview of Design:
-The game will be made up of a Board, Pacman and Ghosts (Mobs), Walls, Dots, Powerups, and Food (GameComponents). Main will have the basic game logic that takes the user's input and incorporates it into what is happening in the game.   
+The game will be made up of a Board, Pacman and Ghosts (Mobs), Walls, Dots, Powerups, and Food (GameComponents).
+Main will have the basic game logic that takes the user's input and incorporates it into what is happening in the
+game.   
 
 Mobs.pde
-The Mobs interface will be implemented when creating the Pacman and Ghost classes. We chose to create this interface because Pacman and the Ghosts will have similar behavior and will need the methods in this interface, such as setting the vulnerability of the mob, getting the vulnerability of the mob, getting the appearance, setting the appearance, and changing their behavior when pacman eats a powerup.
+The Mobs interface will be implemented when creating the Pacman and Ghost classes. We chose to create this interface
+because Pacman and the Ghosts will have similar behavior and will need the methods in this interface, such as setting 
+the vulnerability of the mob, getting the vulnerability of the mob, getting the appearance, setting the appearance, and
+changing their behavior when pacman eats a powerup.
 
 GameComponent.pde
-The GameComponent interface will be implemented when creating the walls, dots, powerups, and food. We decided to group these together due to the fact that they are all visible components on the board that have similar functions and will therefore need to provide similar information. For example, we wrote methods for how much to increase the score by when the GameComponent is eaten, getting and setting the appearance (for visuals), and also if the GameComponent is able to be passed and/or eaten by ghosts or pacman.
+The GameComponent interface will be implemented when creating the walls, dots, powerups, and food. We decided to group 
+these together due to the fact that they are all visible components on the board that have similar functions and will 
+therefore need to provide similar information. For example, we wrote methods for how much to increase the score by when 
+the GameComponent is eaten, getting and setting the appearance (for visuals), and also if the GameComponent is able to 
+be passed and/or eaten by ghosts or pacman.
 
 Board.pdc
-The Board interface was written so that the Board class would be able to provide basic overall information on the game. For example, the board interface includes methods that return the current score and number of lives left. There are also methods for general information on the state of the game, such as whether the game or round is over and also what to do to reset the round.
+The Board interface was written so that the Board class would be able to provide basic overall information on the game.
+For example, the board interface includes methods that return the current score and number of lives left. There are also
+methods for general information on the state of the game, such as whether the game or round is over and also what to do 
+to reset the round.
 
 The board interface made will interact with the GameComponent and Mobs interfaces,
 but main will only interact with the board. The GameComponent Interface will provide 
