@@ -25,7 +25,9 @@ public interface Mobs {
   */
   public void setAppearance(int direction);
   
-  /**updates individual mob to appropriate state when pacman eats powerup
+  /**updates individual mob to appropriate state when pacman eats powerup.
+      After X number of turns, the mobs will return to "normal" state without
+      another method needing to be called
   */
   public void powerupEaten();
 }
