@@ -38,6 +38,10 @@ public interface GameComponent {
 *Example code for this interface
 
 public class Fruit {
+
+  public Fruit() {
+    
+  }
   
   public int addScore() {
     if (cherry is eaten) {
