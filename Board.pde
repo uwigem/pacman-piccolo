@@ -43,7 +43,7 @@ public interface Board {
   public void resetRound();
 }
 --------------------------------------------------------------------------------------------------
-*Example code for this interface
+/*Example code for this interface
 
 public class GameLogic() {
   public GameLogic() {
@@ -77,3 +77,4 @@ public class GameLogic() {
     returns if pacman was eaten by ghost || gameOver
   }
 }
+*/
