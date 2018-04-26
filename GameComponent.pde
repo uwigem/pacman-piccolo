@@ -33,3 +33,37 @@ public interface GameComponent {
   */
   public boolean eatableByPacman();
 }
+
+---------------------------------------------------------------------------------
+*Example code for this interface
+
+public class Fruit {
+  
+  public int addScore() {
+    if (cherry is eaten) {
+      score += 100;
+    } else if (strawberry is eaten) {
+      score += 200;
+    }
+  }
+  
+  public Image getAppearance() {
+    returns an image that represents a fruit on board
+  }
+  
+  public void setAppearance(int direction) {
+    sets appearance to match the appearance above
+  }
+  
+  public boolean isPassable() {
+    returns true if fruit can be passed
+  }
+  
+  public boolean eatableByGhosts() {
+    returns true if fruits can be eaten by ghosts, false if not
+  }
+  
+  public boolean eatableByPacman() {
+    returns true (since fruits can be eaten by ghosts)
+  }
+}
