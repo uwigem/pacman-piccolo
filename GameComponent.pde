@@ -33,9 +33,9 @@ public interface GameComponent {
   */
   public boolean eatableByPacman();
 }
-
+/*
 ---------------------------------------------------------------------------------
-/*Example code for this interface
+Example code for this interface
 
 public class Fruit {
 

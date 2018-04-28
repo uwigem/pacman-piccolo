@@ -42,8 +42,9 @@ public interface Board {
   */
   public void resetRound();
 }
+/*
 --------------------------------------------------------------------------------------------------
-/*Example code for this interface
+Example code for this interface
 
 public class GameLogic() {
   public GameLogic() {

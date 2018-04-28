@@ -31,9 +31,9 @@ public interface Mobs {
   */
   public void powerupEaten();
 }
-
+/*
 --------------------------------------------------------------------------------
-/*Example code using this interface
+Example code using this interface
 
 public class Pacman {
 
