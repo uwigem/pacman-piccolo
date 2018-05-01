@@ -1,0 +1,35 @@
+public class Pacman implements Mobs {
+  boolean vulnerable;
+  Point position;
+  
+  public Pacman() {
+    vulnerable = false;
+    position = // make up x,y coordinates;
+  }
+  
+  public boolean isVulnerable() {
+    return vulnerable;
+  }
+  
+  public void setVulnerable(boolean vulnerable) {
+    if (powerupEaten ||  //hasn't moved) {
+      vulnerable = false;
+    } else {
+      vulnerable = true; 
+    }
+  }
+  
+  public Image getAppearnace() {
+  
+  }
+  
+  public void setAppearance(int direction) {
+  
+  }
+  
+  public boolean powerupEaten() {
+    // create another method to set behaviors for when a powerup is eaten
+    // maybe this should be a board thing, possibly gamecomponent
+  }
+
+}
