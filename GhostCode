@@ -1,5 +1,11 @@
 public class Ghost implements Mobs {
   private boolean vulnerable();
+  Point position;
+  
+  public Ghost() {
+    vulnerable = false;
+    position = x, y coordinates
+  }
   
   public boolean isVulnerable() {
     return vulnerable();
