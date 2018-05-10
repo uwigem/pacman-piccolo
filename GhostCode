@@ -1,0 +1,27 @@
+public class Ghost implements Mobs {
+  private boolean vulnerable();
+  
+  public boolean isVulnerable() {
+    return vulnerable();
+  }
+  
+  public void setVulnerable(boolean vulnerable) {
+    ......................
+  }
+  
+  public Image getAppearance() {
+
+ }
+  
+  public void setAppearance(int direction) {
+
+  }
+  
+  public void powerupEaten() {
+    vulnerable = true;
+    // get rid of the powerupEaten in the position that it was eaten
+    // make ghosts colorless
+    // go to jail 
+    ^^ for a set time period
+  }
+}
