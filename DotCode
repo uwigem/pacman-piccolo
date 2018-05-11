@@ -1,0 +1,35 @@
+public class Dot implements GameComponent {
+  Point position;
+  
+  public Dot() {
+  }
+  
+  public int addScore() {
+    return 10;
+  }
+  
+  public Image getAppearance() {
+    //need to use Processing
+  }
+  
+  public void setAppearance(int direction) {
+    //need to use Processing
+  }
+  
+  public boolean isPassable() {
+    if (position.equals(Ghost.getPosition())) { //note-need to make getPosition in Ghost
+      return true; //can be passed over by ghosts
+    } else {
+      return false;
+    }
+  }
+  
+  public boolean eatableByGhosts() {
+    return false;
+  }
+  
+  public boolean eatableByPacman() {
+    return true;
+  }
+  
+}
