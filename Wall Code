@@ -7,7 +7,7 @@ public class Wall implements GameComponent {
   }
   
   public int addScore() {
-    return 10;
+    return 0;
   }
   
   public Image getAppearance() {
@@ -20,7 +20,7 @@ public class Wall implements GameComponent {
   
   public boolean isPassable() {
     if (position.equals(Ghost.getPosition())) { //note-need to make getPosition in Ghost
-      return true; //can be passed over by ghosts
+      return false; //can be passed over by ghosts
     } else {
       return false;
     }
