@@ -1,0 +1,39 @@
+public class Board {
+  private int score;
+  private int numberLives;
+  private Point position;
+  
+  public int score() {
+    return score;  
+  }
+  
+  public int numberLives() {
+    return numberLives();
+}
+
+public void updatePosition(int direction) {
+  if (direction == 0) {
+    position = (x + 1, y);   // right
+  } else if (direction == 1) {
+    position = (x - 1, y);   // left
+  } else if (direction == 2) {
+    position = (x, y + 1); // up
+  } else {
+    position = (x, y - 1); //down
+  }
+}
+
+public boolean gameOver() {
+  return numberLives == 0;
+}
+
+public boolean roundOver() {
+  return gameOver || pacman.eatenByGhosts()
+}
+
+public void resetRound() {
+  position = (x initial, y initial);
+  refill gameComponents;
+}
+  
+}
