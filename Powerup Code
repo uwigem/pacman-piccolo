@@ -1,0 +1,37 @@
+
+public class Powerup implements GameComponent {
+  Point position;
+  
+  public Powerup() {
+    position = (x, y)
+  }
+  
+  public int addScore() {
+    return 50;
+  }
+  
+  public Image getAppearance() {
+    //need to use Processing
+  }
+  
+  public void setAppearance(int direction) {
+    //need to use Processing
+  }
+  
+  public boolean isPassable() {
+    if (position.equals(Ghost.getPosition())) { //note-need to make getPosition in Ghost
+      return true; //can be passed over by ghosts
+    } else {
+      return false;
+    }
+  }
+  
+  public boolean eatableByGhosts() {
+    return false;
+  }
+  
+  public boolean eatableByPacman() {
+    return true;
+  }
+  
+}
